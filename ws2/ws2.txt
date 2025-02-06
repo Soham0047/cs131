@@ -1,0 +1,82 @@
+1) command:
+ echo $HOME
+ pwd
+$HOME is an environment variable and stores path to user's home directory and pwd confirms the current directory
+Home Directory: /home/soham_bhowmick
+
+
+
+2) command used : id >> ws2.txt
+The command "id" helps us find this information and from the output below we can say that the uid:1001(soham_bhowmick), gid: gid=1002(soham_bhowmick) and groups: groups=1002(soham_bhowmick),4(adm),20(dialout),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),118(netdev),119(lxd),1000(ubuntu),1001(google-sudoers).
+ 
+uid=1001(soham_bhowmick) gid=1002(soham_bhowmick) groups=1002(soham_bhowmick),4(adm),20(dialout),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),118(netdev),119(lxd),1000(ubuntu),1001(google-sudoers)
+
+
+
+3) command used: ls /proc | grep mem >> ws2.txt
+The command "ls /proc | grep mem" helps us find the files containing memory info and the output is as follows:
+iomem
+meminfo
+
+
+
+4) comand used: ls /proc | grep cpu >> ws2.txt
+The command "ls /proc | grep cpu" helps us find the files containing cpu info and the output is as follows:
+cpuinfo
+
+
+
+5) command used: head /proc/meminfo >> ws2.txt
+The command "head /proc/meminfo" displays the first few lines of /proc/meminfo, where the total memory is typically listed on the first line (MemTotal).
+MemTotal:         976896 kB
+MemFree:          219312 kB
+MemAvailable:     627576 kB
+Buffers:           11928 kB
+Cached:           514604 kB
+SwapCached:            0 kB
+Active:           342944 kB
+Inactive:         246852 kB
+Active(anon):        884 kB
+Inactive(anon):    71532 kB
+
+
+
+6) command used: cat /proc/cpuinfo | grep "processor" >> ws2.txt
+The command cat /proc/cpuinfo | grep "processor" gave the information on the processors. I got two so i guess it is a dual core processor.
+processor	: 0
+processor	: 1
+
+
+
+7) command used: cat /proc/cpuinfo | grep "model name" >> ws2.txt
+The command "cat /proc/cpuinfo | grep "model name"" shows the cpu model.
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+
+
+
+8) command used: cat /proc/cpuinfo | grep "cpu MHz" >> ws2.txt
+The command "cat /proc/cpuinfo | grep "cpu MHz"" give sthe CPU speed in MHz and outputs:
+cpu MHz		: 2200.228
+cpu MHz		: 2200.22
+
+
+
+9) command used: cat /etc/os-release >> ws2.txt
+The command "cat /etc/os-release" gives information about the os.
+the NAME and VERSION gives us more information and the os-release file under /etc/ contains this information. The output is as follows:
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+
+
+
