@@ -1,11 +1,11 @@
-# Top 3 pickup Locations on January 2, 2019:
-  Location ID  Count
-     8605       161
-     8407       132
-     8163       186
+# Top 3 pickup locations on January 2, 2019:
+  Location ID   Count
+     8605        161
+     8407        132
+     8163        186
 
-# Top pickup locations on January 10, 2019:
-  Location ID  Count
-     13738      237
-     13519      236
-     12997      161
+# Top 3 pickup locations on January 10, 2019:
+  Location ID   Count
+     13738       237
+     13519       236
+     12997       161

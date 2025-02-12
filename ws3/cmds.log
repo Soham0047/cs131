@@ -331,10 +331,34 @@
   331  cd cs131
   332  cat cs131
   333  cat
-  334  cd ~/cs131/ws3
-  335  head -5 2019-01-h1.csv
-  336  grep '"2019-01-02' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | awk -F'.' '{print $1}' | sort | uniq -c | sort -nr | head -3 >> ws3.txt
-  337  vim ws3.txt
-  338  grep '"2019-01-10' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | awk -F'.' '{print $1}' | sort | uniq -c | sort -nr | head -3 >> ws3.txt
-  339  vim ws3.txt
-  340  history > cmds.log
+  334  cd cs131
+  335  cd ws3
+  336  sudo apt update
+  337  cd ..
+  338  sudo apt update
+  339  sudo apt install python3-pip -y
+  340  pip install --user gdown
+  341  /home/soham_bhowmick/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  342  mv taxi_dataset.csv ~/cs131/ws3/
+  343  mv 2019-01-h1.csv ~/cs131/ws3/
+  344  cd ~/cs131/ws3
+  345  head -5 taxi_dataset.csv
+  346  head -5 2019-01-h1.csv
+  347  grep "^2019-01-02" 2019-01-h1.csv | cut -d ',' -f8 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  348  vim ws3.txt
+  349  grep "^2019-01-10" 2019-01-h1.csv | cut -d ',' -f8 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  350  grep "^2019-01-10" 2019-01-h1.csv | vut -d ',' -f8 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  351  grep "^2019-01-10" 2019-01-h1.csv | cut -d ',' -f8 | sort | uniq -c | sort -nr | head -> 3 >> ws3.txt
+  352  vim ws3.txt
+  353  grep "grep '"2019-01-02' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | awk -F'.' '{print $1}' | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  354  cd cs131
+  355  cd ws3
+  356  vim ws3.txt
+  357  head -5 taxi_dataset.csv
+  358  head -5 2019-01-h1.csv
+  359  vim ws3.txt
+  360  grep '"2019-01-02' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | cut -d '.' -f1 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  361  vim ws3.txt
+  362  grep '"2019-01-10' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | cut -d '.' -f1 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  363  vim ws3.txt
+  364  history > cmds.log
