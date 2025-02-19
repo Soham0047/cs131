@@ -1,0 +1,35 @@
+Name: Soham Bhowmick
+SJSU ID; 018070663
+
+1a) alias l='ls -ltr'
+output:
+total 439612
+-rw-rw-r-- 1 soham_bhowmick soham_bhowmick 450156048 Jan 19 07:24 2019-01-h1.csv
+-rw-rw-r-- 1 soham_bhowmick soham_bhowmick         0 Feb 19 04:16 a1.txt
+
+1b) alias w='ls -l | wc'
+output:
+      3      20     167
+
+2c) Average fare amount for 48-161
+7.07
+Average fare amount for 79-132
+52.04
+
+2d) Highest total amount paid by paid on January 10,2019
+36090.3
+
+2e) Top 10 Dropoff Locations for Rides with 3+ Passengers
+-- The left represent how many times a dropoff location appears in rides with 3+ passengers
+-- The dropoff location ID is shown on the right.
+No. of app  dolocationid
+  71320       236.0
+  63201       237.0
+  58829       161.0
+  49980       170.0
+  47282       230.0
+  46053       162.0
+  45167       142.0
+  43544        48.0
+  43116       141.0
+  43081       239.0
