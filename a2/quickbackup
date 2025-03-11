@@ -8,10 +8,6 @@
 # The script creates a backup archive (tar.gz) named with the directory's basename
 # and the current timestamp (format: YYYY-MM-DD-HH-MM-SS).
 # The archive is stored in a backup directory (default: $HOME/quickbackups).
-#
-# Example:
-# quickbackup /path/to/myproject
-# -> Creates a backup file like myproject-2025-03-12-15:30:00.tar.gz in $HOME/quickbackups
 
 # Determine the directory to back up.
 if [ -z "$1" ]; then
