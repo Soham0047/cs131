@@ -1,0 +1,56 @@
+#!/bin/bash
+# quickbackup: A tool to create a compressed backup of a directory.
+#
+# Usage:
+# quickbackup [directory]
+# If no directory is provided, the script will prompt for a directory.
+#
+# The script creates a backup archive (tar.gz) named with the directory's basename
+# and the current timestamp (format: YYYY-MM-DD-HH-MM-SS).
+# The archive is stored in a backup directory (default: $HOME/quickbackups).
+#
+# Example:
+# quickbackup /path/to/myproject
+# -> Creates a backup file like myproject-2025-03-12-15:30:00.tar.gz in $HOME/quickbackups
+
+# Determine the directory to back up.
+if [ -z "$1" ]; then
+    read -p "Enter the directory to backup: " target_dir
+else
+    target_dir="$1"
+fi
+
+# Check if the provided input is a valid directory.
+if [ ! -d "$target_dir" ]; then
+    echo "Error: $target_dir is not a valid directory."
+    exit 1
+fi
+
+# Define the backup destination directory.
+backup_dir="$HOME/quickbackups"
+
+# Create the backup directory if it doesn't exist.
+mkdir -p "$backup_dir"
+
+# Get the current timestamp in the format YYYY-MM-DD-HH-MM-SS.
+timestamp=$(date "+%F-%H-%M-%S")
+
+# Get the basename of the target directory (e.g., "myproject").
+base_name=$(basename "$target_dir")
+
+# Construct the output archive filename.
+archive_name="${base_name}-${timestamp}.tar.gz"
+
+# Create the compressed backup archive.
+tar -czf "${backup_dir}/${archive_name}" -C "$(dirname "$target_dir")" "$base_name"
+
+if [ $? -eq 0 ]; then
+    echo "Backup successful!"
+    echo "Backup file created at: ${backup_dir}/${archive_name}"
+else
+    echo "Backup failed."
+    exit 1
+fi
+
+exit 0
+
