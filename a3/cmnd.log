@@ -1,0 +1,606 @@
+    1  git -V
+    2  git --version
+    3  mkdir cs131
+    4  cd cs131
+    5  echo "this is my readme" > README.md
+    6  git init
+    7  ls
+    8  git add README.md
+    9  git status
+   10  git commit -m "first commit"
+   11  git config --global user.email "soham.bhowmick@sjsu.edu"
+   12  git config --global user.name "Soham Bhowmick"
+   13  git commit -m "first commit"
+   14  git branch -M main
+   15  git remote add origin https://github.com/Soham0047/cs131
+   16  git push -u origin main
+   17  git init
+   18  cd cs131
+   19  ls
+   20  git branch -M main
+   21  git remote add origin https://github.com/Soham0047/cs131
+   22  git push -u origin main
+   23  echo "add another line" >> README.md
+   24  git status
+   25  git commit -m "add another line in the README"
+   26  git add README.md
+   27  git push -u origin main
+   28  ls
+   29  cd cs131
+   30  ls
+   31  pwd
+   32  ls
+   33  mkdir sample1
+   34  ls
+   35  cd sample1
+   36  mkdir sample2
+   37  touch a.txt
+   38  sample2/
+   39  cd sample2/
+   40  touch a.txt
+   41  ls
+   42  pws
+   43  pwd
+   44  cd ..
+   45  touch ./b.txt
+   46  ls
+   47  cd ./sample1/sample2/
+   48  cd ~
+   49  pwd
+   50  cd cs131
+   51  file README.md
+   52  file sample1/
+   53  cat README.md
+   54  less README.md
+   55  man ls
+   56  ls -a
+   57  ls -la
+   58  ls -las
+   59  man ls
+   60  ls -las
+   61  ls -r
+   62  man ls
+   63  ls -las -r
+   64  las -lark
+   65  ls -lark
+   66  man ls
+   67  ls -S
+   68  ls -atrhl
+   69  cd /
+   70  ls
+   71  cd bin
+   72  ls
+   73  cd ..
+   74  ls
+   75  cd etc/
+   76  cst passwd
+   77  cat passwd
+   78  cd ..
+   79  ls
+   80  cd cs131
+   81  cd home
+   82  cd cs131/
+   83  cd
+   84  cd cs131
+   85  cd sample1/
+   86  ls
+   87  cp a.txt b.txt
+   88  ls
+   89  cp a.txt ./sample2/b.txt
+   90  cd sample2/
+   91  ls
+   92  rm b.txt
+   93  ls
+   94  cd ..
+   95  ls
+   96  rm -r sample2/
+   97  ls
+   98  touch aa.txt
+   99  touch aa123.txt
+  100  ls
+  101  ls ?.txt
+  102  ls ??.txt
+  103  ls *.txt
+  104  ls [!a]*.txt
+  105  ls [!b]*.txt
+  106  ls *.txt
+  107  ls g*.txt
+  108  ls b*.txt
+  109  ls Data???.txt
+  110  ls [abc]*.txt
+  111  touch c.txt
+  112  ls [abc]*.txt
+  113  ls Dataabc.txt
+  114  ls Data???
+  115  vim
+  116  cd cs131
+  117  cd sample1
+  118  vim a.txt
+  119  cd cs131
+  120  vim
+  121  cd cs131
+  122  cd sample1/
+  123  vim data.txt
+  124  cat data.txt
+  125  man sort
+  126  vim data.txt
+  127  sort data.txt
+  128  cat data.txt
+  129  uniq data.txt
+  130  sort data.txt| uniq 
+  131  cd cs131
+  132  cd sample1/
+  133  sort data.txt
+  134  sort data.txt > sorted_data.txt
+  135  ls
+  136  cat sorted_data.txt
+  137  ls > sorted_data.txt
+  138  cat sorted_data.txt
+  139  sort data.txt >> sorted_data.txt
+  140  cat sorted_data.txt
+  141  ls
+  142  cat
+  143  cd cs131
+  144  cd sample1/
+  145  history
+  146  uniq data.txt
+  147  sort data.txt
+  148  uniq data.txt
+  149  sort data.txt | uniq
+  150  sort data.txt | uniq -c
+  151  history | grep uniq
+  152  history | grep uniq > uniq_result.txt
+  153  ls
+  154  cat uniq_result.txt
+  155  wc data.txt
+  156  cd cs131
+  157  ../
+  158  ..
+  159  ./
+  160  cd cs13
+  161  cd cs131
+  162  git log
+  163  ls
+  164  git log --pretty=format:'%h &ad %s' -- graph
+  165  git log --pretty=format:'%h &ad %s' --graph
+  166  vim ~/.gitconfig
+  167  cat ~/.gitconfig
+  168  git hist
+  169  ls
+  170  vim README.md
+  171  git status
+  172  git add README.md
+  173  git commit -m "edit README.md"
+  174  git hist
+  175  git checkout 48417f1
+  176  cat README.md
+  177  git checkout main
+  178  cat README.md
+  179  vim README.md
+  180  cat README.md
+  181  git status
+  182  git checkout README.md
+  183  cat README.md
+  184  vim README.md
+  185  git add README.md
+  186  git status
+  187  git reset HEAD README.md
+  188  cat REAME.md
+  189  cat README.md
+  190  git status
+  191  cd cs131
+  192  mkdir ws2
+  193  cd ws2
+  194  echo $HOME
+  195  pwd
+  196  id
+  197  ls /proc | grep mem
+  198  ls /proc/mem*
+  199  ls /proc | grep cpu
+  200  ls /proc/cpu*
+  201  head /proc/meminfo
+  202  head /proc/cpuinfo
+  203  tail /proc/cpuinfo
+  204  cat /proc/cpuinfo
+  205  cat /proc/cpuinfo | grep "processor"
+  206  cat /proc/cpuinfo | grep "model name"
+  207  cat /proc/cpuinfo | grep "cpu MHz"
+  208  ls /etc/*release
+  209  cat /etc/os-release
+  210  echo "Home Directory: $(echo $HOME)" > ws2.txt
+  211  id >> ws2.txt
+  212  vim ws2.txt
+  213  ls /proc | grep mem >> ws2.txt
+  214  vim ws2.txt
+  215  ls /proc | grep cpu >> ws2.txt
+  216  vim ws2.txt
+  217  head /proc/meminfo >> ws2.txt
+  218  vim ws2.txt
+  219  cat /proc/cpuinfo | grep "processor" >> ws2.txt
+  220  vim ws2.txt
+  221  cat /proc/cpuinfo | grep "model name" >> ws2.txt
+  222  vim ws2.txt
+  223  cat /proc/cpuinfo | grep "cpu MHz" >> ws2.txt
+  224  vim ws2.txt
+  225  cat /etc/os-release >> ws2.txt
+  226  vim ws2.txt
+  227  history > cmds.log
+  228  vim cmds.log
+  229  cd ~/cs131
+  230  git add ws2/ws2.txt ws2/cmds.log
+  231  git commit -m "Added ws2 assignment files"
+  232  git push
+  233  cd cs131
+  234  git status
+  235  git add README.md
+  236  git commit -m "this is my commit on 2/10"
+  237  git status
+  238  git hist
+  239  git hist --all
+  240  git hist
+  241  git --version
+  242  git checkout -b 0210class
+  243  vim README.md
+  244  git checkout main
+  245  cat README.md
+  246  git checkout 0210class
+  247  cat README.md
+  248  git merge main
+  249  git checkout main
+  250  vim README.md
+  251  git add README.md
+  252  git commit -m "edit README.md"
+  253  git hist --all
+  254  cat ~/.gitconfig
+  255  git hist --all
+  256  cat ~/.gitconfig 
+  257  vim ~/.gitconfig
+  258  git hist --all
+  259  git checkout 0210class
+  260  git merge main
+  261  git hist --all
+  262  git merge main
+  263  git checkout 0210clas
+  264  git checkout 0210class
+  265  git merge main
+  266  git commit -m "merging"
+  267  git hist --all
+  268  git checkout main
+  269  git hist --all
+  270  git checkout main
+  271  cat README.md
+  272  git status
+  273  git checkout 0210class
+  274  vim README.md
+  275  cat README.md
+  276  git add README.md
+  277  git commit -m "edit README so it shows branch 0210class branch name"
+  278  git merge main
+  279  git checkout main
+  280  cat README.md
+  281  git add README.md
+  282  git commit -m "edit README by removing the first line"
+  283  git checkout 0210class
+  284  git merge main
+  285  vim README.md
+  286  vim
+  287  cd cs131
+  288  vim README.md
+  289  git checkout 0210class
+  290  vim README.md
+  291  git checkout main
+  292  git checkout 0210class
+  293  cat README.md
+  294  git checkout main
+  295  git checkout 0210class
+  296  git commit -m "new conflict"
+  297  git checkout main
+  298  git merge
+  299  cd cs131
+  300  git checkout main
+  301  git add .
+  302  git commit -m "change made"
+  303  git checkout main
+  304  cd sample1/
+  305  ls
+  306  mkdir sample1
+  307  cd sample1/
+  308  echo "show this text"
+  309  echo *
+  310  git checkout 0210class
+  311  git merge
+  312  git merge main
+  313  git checkout main
+  314  git push
+  315  cd cs131
+  316  ../
+  317  ..
+  318  ./
+  319  cd ./
+  320  cd ..
+  321  ls
+  322  cd cs131
+  323  ../
+  324  cd ..
+  325  sudo apt update
+  326  apt list --upgradable
+  327  sudo apt install python3-pip -y
+  328  pip install --user gdown
+  329  /home/soham_bhowmick/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  330  mkdir -p ~/cs131/ws3
+  331  cd cs131
+  332  cat cs131
+  333  cat
+  334  cd cs131
+  335  cd ws3
+  336  sudo apt update
+  337  cd ..
+  338  sudo apt update
+  339  sudo apt install python3-pip -y
+  340  pip install --user gdown
+  341  /home/soham_bhowmick/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  342  mv taxi_dataset.csv ~/cs131/ws3/
+  343  mv 2019-01-h1.csv ~/cs131/ws3/
+  344  cd ~/cs131/ws3
+  345  head -5 taxi_dataset.csv
+  346  head -5 2019-01-h1.csv
+  347  grep "^2019-01-02" 2019-01-h1.csv | cut -d ',' -f8 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  348  vim ws3.txt
+  349  grep "^2019-01-10" 2019-01-h1.csv | cut -d ',' -f8 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  350  grep "^2019-01-10" 2019-01-h1.csv | vut -d ',' -f8 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  351  grep "^2019-01-10" 2019-01-h1.csv | cut -d ',' -f8 | sort | uniq -c | sort -nr | head -> 3 >> ws3.txt
+  352  vim ws3.txt
+  353  grep "grep '"2019-01-02' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | awk -F'.' '{print $1}' | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  354  cd cs131
+  355  cd ws3
+  356  vim ws3.txt
+  357  head -5 taxi_dataset.csv
+  358  head -5 2019-01-h1.csv
+  359  vim ws3.txt
+  360  grep '"2019-01-02' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | cut -d '.' -f1 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  361  vim ws3.txt
+  362  grep '"2019-01-10' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | cut -d '.' -f1 | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  363  vim ws3.txt
+  364  history > cmds.log
+  365  vim cmds.log
+  366  cd ..
+  367  git add ws3/ws3.txt ws3/cmds.log
+  368  git commit -m "Fixed files"
+  369  git push origin main
+  370  cd ~/cs131/ws3
+  371  head -5 2019-01-h1.csv
+  372  grep '"2019-01-02' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | awk -F'.' '{print $1}' | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  373  vim ws3.txt
+  374  grep '"2019-01-10' 2019-01-h1.csv | cut -d ',' -f8 | tr -d '"' | awk -F'.' '{print $1}' | sort | uniq -c | sort -nr | head -3 >> ws3.txt
+  375  vim ws3.txt
+  376  history > cmds.log
+  377  cim cmds.log
+  378  vim cmds.log
+  379  cd cs131
+  380  cd ..
+  381  git add ws3/ws3.txt ws3/cmds.log
+  382  git commit -m "Added ws3 required files"
+  383  git push
+  384  cd cs131
+  385  vim ws3.txt
+  386  cd ws3
+  387  vim ws3.txt
+  388  cd ..
+  389  head -5 2019-01-h1.csv
+  390  mkdir -p a1
+  391  cd a1
+  392  vim ~/.bashrc
+  393  source ~/.bashrc
+  394  l
+  395  w
+  396  sudo apt update
+  397  sudo apt install python3-pip -y
+  398  pip install --user gdown
+  399  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  400  mv 2019-01-h1.csv ~/cs131/a1
+  401  head -5 2019-01-h1.csv
+  402  l
+  403  w
+  404  l >> a1.txt
+  405  w >> a1.txt
+  406  vim a1.txt
+  407  mkdir -p FARE
+  408  grep ',48.0,161.0,' 2019-01-h1.csv | cut -d ',' -f11 > FARE/48-161.txt
+  409  grep ',79.0,132.0,' 2019-01-h1.csv | cut -d ',' -f11 > FARE/79-132.txt
+  410  paste -sd+ FARE/48-161.txt | bc -l | sed 's/$/\/$(wc -l < FARE\/48-161.txt)/' | bc -l >> a1.txt
+  411  total=$(paste -sd+ FARE/48-161.txt | bc -l)
+  412  count=$(wc -l < FARE/48-161.txt)
+  413  echo "scale=2; $total / $count" | bc -l >> a1.txt
+  414  total=$(paste -sd+ FARE/79-132.txt | bc -l)
+  415  count=$(wc -l < FARE/79-132.txt)
+  416  echo "scale=2; $total / $count" | bc -l >> a1.txt
+  417  cat a1.txt
+  418  vim a1.txt
+  419  grep '"2019-01-10' 2019-01-h1.csv | cut -d ',' -f17 | sort -nr | head -1 >> a1.txt
+  420  grep ',[3-9].0,' 2019-01-h1.csv | cut -d ',' -f9 | sort | uniq -c | sort -nr | head -10 >> a1.txt
+  421  vim a1.txt
+  422  history > cmds.log
+  423  vim cmds.log
+  424  vim a1.txt
+  425  $ cat FARE/48-161.txt
+  426  vim 48-161.txt
+  427  grep ',48.0,161.0,' 2019-01-h1.csv | cut -d ',' -f11 > FARE/48-161.txt
+  428  $ cat FARE/48-161.txt
+  429  cat FARE/48-161.txt
+  430  cat FARE/79-132.txt
+  431  vim a1.txt
+  432  cd ..
+  433  git adda1/a1.txt a1/cmds.log
+  434  git add a1/a1.txt a1/cmds.log
+  435  git commit -m "Assignment-1 submission"
+  436  git push
+  437  cd cs131
+  438  ls
+  439  ls -r -a -h
+  440  ls -h -r -a
+  441  echo "The balance for user $USER is /$5.00"
+  442  echo "The balance for user $USER is \$5.00"
+  443  "The balance for user $USER is $5.00"
+  444  echo "$USER $((2+2)) $(cal)"
+  445  id
+  446  ~/.bashrc
+  447  cd cs131
+  448  mkdir a2
+  449  ls
+  450  cd a2
+  451  vim quickbackup
+  452  ls
+  453  rm quickbackup
+  454  ls
+  455  vim quickbackup
+  456  ls
+  457  vim quickbackup
+  458  chmod +x quickbackup
+  459  ./quickbackup
+  460  cs131
+  461  ./quickbackup
+  462  cd ..
+  463  ./quickbackup
+  464  cd cs131
+  465  cs a2
+  466  cd a2
+  467  ./quickbackup/home/sohambhowmick
+  468  ./quickbackup
+  469  ls
+  470  ./quickbackup
+  471  ls -l $HOME/quickbackups
+  472  cd ..
+  473  ls
+  474  cd ws3
+  475  ls
+  476  ./quickbackup
+  477  cd ..
+  478  cd a2
+  479  ./quickbackup
+  480  tar -tzf ws3-2025-03-11-19:37:49.tar.gz
+  481  cd ..
+  482  tar -tzf ws3-2025-03-11-19:37:49.tar.gz
+  483  cd quickbackup
+  484  cd soham_bhowmick
+  485  ls
+  486  cd quickbackups
+  487  tar -tzf ws3-2025-03-11-19:37:49.tar.gz
+  488  ls
+  489  mv ws3-2025-03-11-19:37:49.tar.gz ws3-2025-03-11-19_37_49.tar.gz
+  490  tar -tzf ws3-2025-03-11-19_37_49.tar.gz
+  491  ls
+  492  tar --force-local -tzf cs131-2025-03-11-19:29:47.tar.gz
+  493  cd ..
+  494  cd cs131/a2
+  495  ls
+  496  vim quickbackup
+  497  ./quickbackup
+  498  cd ..
+  499  cd cs131
+  500  ls
+  501  cd a2
+  502  ./quickbackup
+  503  cd ~/cs131
+  504  cd ..
+  505  ls
+  506  cd quickbackups
+  507  tar -tzf ws4-2025-03-11-19-50-29.tar.gz
+  508  cd ..
+  509  cd cs131/a2
+  510  vim quickbackup
+  511  vim README.md
+  512  cd ~/quickbackups
+  513  tar -tzf ws4-2025-03-11-19-50-29.tar.gz
+  514  ~/cs131/a2
+  515  cd ~/cs131/a2
+  516  vim README.md
+  517  history > cmds.log
+  518  vim cmds.log
+  519  cd ~/cs131
+  520  cd a2
+  521  ls
+  522  cd ..
+  523  git add a2/quickbackup a2/README.md a2/cmds.log
+  524  git commit -m "Completed and added a2 mini project"
+  525  git push
+  526  cd cs131
+  527  ls
+  528  cd a2
+  529  cd ~/
+  530  cd pathnames
+  531  cd quickbackups
+  532  ls
+  533  cd ~/
+  534  cd cs131/a2
+  535  ./pathname
+  536  ./quickbackup
+  537  ../
+  538  ls
+  539  cd ..
+  540  ls
+  541  cd a2
+  542  ./quickbackup
+  543  pwd
+  544  /home/soham_bhowmick/cs131/ws3
+  545  ./pathname
+  546  ./quickbackup
+  547  cd ~/
+  548  cd quickbackups
+  549  tar -tzf ws3-2025-03-12-18-00-04.tar.gz
+  550  ls
+  551  cd cs131
+  552  ls
+  553  mkdir ws56
+  554  ls
+  555  cd ws56
+  556  ls ../2019-1-h1.csv
+  557  cd ..
+  558  cd ws56
+  559  ls ../2019-01-h1.csv
+  560  cd ..
+  561  head -5 2019-01-h1.csv
+  562  cd ws56
+  563  sudo apt update
+  564  sudo apt install python3-pip -y
+  565  pip install --user gdown
+  566  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  567  head -5 2019-01-h1.csv
+  568  ls
+  569  sed -n '/^2\.0,/p' 2019-01-h1.csv > vendor2.csv
+  570  wc vendor2.csv
+  571  sed 's/[:"-]//g' 2019-01-h1.csv > no-separators.csv
+  572  head -10 no-separators.csv
+  573  sed 's/\([0-9]\+\)\.[0-9]\+/\1/g' no-separators.csv > no-fractions.csv
+  574  head -10 no-fractions.csv
+  575  vim ws56.txt
+  576  awk -F, 'NR>1 && $17 >= 10 { freq[$14]++ } END { for (t in freq) print t, freq[t] }' 2019-01-h1.csv >> ws56.txt
+  577  vim ws56.txt
+  578  awk -F, 'NR>1 { freq[$14]++ }
+  579           END { for (t in freq) print t, freq[t] }' 2019-01-h1.csv | sort -k2 -nr | head -20 >> ws56.txt
+  580  vim ws56.txt
+  581  history > cmnd.log
+  582  vim cmnd.log
+  583  cd ~/cs131
+  584  git add ws56/cmnd.log ws56/ws56.txt
+  585  git commit -m "Completed ws5 & ws6 (sed & awk) tasks on 2019-01-h1.csv"
+  586  git push
+  587  git pull --rebase origin main
+  588  git push origin main
+  589  cd ~/cs131
+  590  ls
+  591  mkdir a3
+  592  ls
+  593  cd a3
+  594  vim grades.csv
+  595  vim grader.awk
+  596  awk -f grader.awk grades.csv > a3.txt
+  597  vim a3.txt
+  598  vim grader.awk
+  599  awk -f grader.awk grades.csv >> a3.txt
+  600  vim a3.txt
+  601  awk -f grader.awk grades.csv > a3.txt
+  602  vim a3.txt
+  603  vim grader.awk
+  604  awk -f grader.awk grades.csv > a3.txt
+  605  vim a3.txt
+  606  history > cmnd.log

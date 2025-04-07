@@ -1,0 +1,11 @@
+Grade Report
+
+David|Total:195|Avg:65|Fail
+Eve|Total:265|Avg:88|Pass
+Bob|Total:246|Avg:82|Pass
+Charlie|Total:270|Avg:90|Pass
+Alice|Total:253|Avg:84|Pass
+
+Summary
+Top student: Charlie with 270 points
+Lowest student: David with 195 points
